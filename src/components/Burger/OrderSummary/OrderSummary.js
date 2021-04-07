@@ -13,6 +13,9 @@ export default function OrderSummary(props)
                 );
             })}
            <b>Pay: {props.finalPrice.toFixed(2)}</b>
+           <p>Continue to checkout?</p>
+           <button style={{backgroundColor:"red"}} onClick={props.clicked}>CANCEL</button>
+           <button style={{backgroundColor:"green"}} >Continue</button>
       </div>
     );
 }

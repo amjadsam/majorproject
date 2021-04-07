@@ -14,7 +14,7 @@ export default function BuildControls(props)
             <b>Current Price:{props.price.toFixed(2)}</b>
             {controls.map((el)=><BuildControl  ingredientHandler={props.ingredientAdded}
          ingredientHandlerRemover={props.ingredientRemoved} type={el.type} label={el.label} key={el.type}/>)}      
-        <button className="OrderButton" onClick={props.modalHandled}  disabled={props.purchasable<=0}>{!props.showModaled?"ORDER NOW":"CANCEL"}</button>
+        <button className="OrderButton" onClick={props.modalHandled}  disabled={props.purchasable<=0}>ORDER NOW</button>
         
         </div>
     );

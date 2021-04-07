@@ -70,7 +70,7 @@ class BurgerBuilder extends Component
         return(
             <div>
                 {this.state.showModal? <Modal  >
-                    <OrderSummary  ingredients={this.state.ingredients} finalPrice={this.state.totalPrice}/>
+                    <OrderSummary clicked={this.modalHandler}  ingredients={this.state.ingredients} finalPrice={this.state.totalPrice}/>
                 </Modal>:null}
                     <Burger ingredients={this.state.ingredients}/>
                     <BuildControls
