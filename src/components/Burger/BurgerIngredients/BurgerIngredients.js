@@ -1,6 +1,5 @@
 import React from "react";
 import "./../../../../src/App.css";
-import PropTypes from "prop-types";
  function BurgerIngredients(props)
 {
     let Ingredients=null;
@@ -33,7 +32,5 @@ import PropTypes from "prop-types";
     }
     return Ingredients;
 }
-BurgerIngredients.propTypes={
-    type:PropTypes.string.isRequired
-}
+
 export default BurgerIngredients;
