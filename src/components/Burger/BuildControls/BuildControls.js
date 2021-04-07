@@ -1,4 +1,5 @@
 import React from "react";
+import "./BuildControls.css";
 import BuildControl from "./BuildControl/BuildControl";
 export default function BuildControls(props)
 {
